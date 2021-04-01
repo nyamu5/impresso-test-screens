@@ -112,20 +112,40 @@ class ValidationScreen extends StatelessWidget {
                       },
                     ),
                     ValidationIconButton(
-                        icon: Image.asset('assets/verify_icon.png'),
-                        label: 'Official ID'),
+                      icon: Image.asset('assets/verify_icon.png'),
+                      label: 'Official ID',
+                      onTap: () {
+                        Navigator.pushNamed(context, JobScreen.id);
+                      },
+                    ),
                     ValidationIconButton(
-                        icon: Image.asset('assets/references_icon.png'),
-                        label: 'References'),
+                      icon: Image.asset('assets/references_icon.png'),
+                      label: 'References',
+                      onTap: () {
+                        Navigator.pushNamed(context, JobScreen.id);
+                      },
+                    ),
                     ValidationIconButton(
-                        icon: Image.asset('assets/salary_icon.png'),
-                        label: 'Salary'),
+                      icon: Image.asset('assets/salary_icon.png'),
+                      label: 'Salary',
+                      onTap: () {
+                        Navigator.pushNamed(context, JobScreen.id);
+                      },
+                    ),
                     ValidationIconButton(
-                        icon: Image.asset('assets/education_icon.png'),
-                        label: 'Education'),
+                      icon: Image.asset('assets/education_icon.png'),
+                      label: 'Education',
+                      onTap: () {
+                        Navigator.pushNamed(context, JobScreen.id);
+                      },
+                    ),
                     ValidationIconButton(
-                        icon: Image.asset('assets/medical_icon.png'),
-                        label: 'Medical'),
+                      icon: Image.asset('assets/medical_icon.png'),
+                      label: 'Medical',
+                      onTap: () {
+                        Navigator.pushNamed(context, JobScreen.id);
+                      },
+                    ),
                   ],
                 ),
               ),
