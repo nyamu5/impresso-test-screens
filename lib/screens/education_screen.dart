@@ -1,11 +1,12 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:impresso_test/components/back_button.dart';
 import 'package:impresso_test/components/next_button.dart';
 import 'package:impresso_test/components/validate_icon_button.dart';
 import 'package:impresso_test/constants.dart';
 
-class JobScreen extends StatelessWidget {
-  static String id = 'job_screen';
+class EducationScreen extends StatelessWidget {
+  static String id = 'education_screen';
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class JobScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     Text(
-                      'Job',
+                      'Education',
                       style: TextStyle(
                         height: 2,
                         fontSize: 20,
@@ -57,30 +58,8 @@ class JobScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 15),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Icon(
-                      Icons.info_outline,
-                      color: kMutedTextColor,
-                      size: 14,
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Flexible(
-                      child: Text(
-                        'Only Company Badge dated within the last 6 months will be accepted.',
-                        style: TextStyle(
-                          fontSize: 10,
-                          color: kMutedTextColor,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+              SizedBox(
+                height: 20,
               ),
               NextBtn(),
               BackBtn(

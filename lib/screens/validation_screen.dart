@@ -2,8 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:impresso_test/components/back_button.dart';
 import 'package:impresso_test/constants.dart';
+import 'package:impresso_test/screens/education_screen.dart';
 import 'package:impresso_test/screens/job_screen.dart';
 import 'package:impresso_test/components/validate_icon_button.dart';
+import 'package:impresso_test/screens/medical_screen.dart';
+import 'package:impresso_test/screens/salary_screen.dart';
+import 'package:impresso_test/screens/testimonial_screen.dart';
+import 'package:impresso_test/screens/verify_screen.dart';
 
 class ValidationScreen extends StatelessWidget {
   static String id = 'validationScreen';
@@ -115,35 +120,35 @@ class ValidationScreen extends StatelessWidget {
                       icon: Image.asset('assets/verify_icon.png'),
                       label: 'Official ID',
                       onTap: () {
-                        Navigator.pushNamed(context, JobScreen.id);
+                        Navigator.pushNamed(context, VerifyScreen.id);
                       },
                     ),
                     ValidationIconButton(
                       icon: Image.asset('assets/references_icon.png'),
                       label: 'References',
                       onTap: () {
-                        Navigator.pushNamed(context, JobScreen.id);
+                        Navigator.pushNamed(context, TestimonialScreen.id);
                       },
                     ),
                     ValidationIconButton(
                       icon: Image.asset('assets/salary_icon.png'),
                       label: 'Salary',
                       onTap: () {
-                        Navigator.pushNamed(context, JobScreen.id);
+                        Navigator.pushNamed(context, SalaryScreen.id);
                       },
                     ),
                     ValidationIconButton(
                       icon: Image.asset('assets/education_icon.png'),
                       label: 'Education',
                       onTap: () {
-                        Navigator.pushNamed(context, JobScreen.id);
+                        Navigator.pushNamed(context, EducationScreen.id);
                       },
                     ),
                     ValidationIconButton(
                       icon: Image.asset('assets/medical_icon.png'),
                       label: 'Medical',
                       onTap: () {
-                        Navigator.pushNamed(context, JobScreen.id);
+                        Navigator.pushNamed(context, MedicalScreen.id);
                       },
                     ),
                   ],

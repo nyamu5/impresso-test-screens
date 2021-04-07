@@ -4,8 +4,8 @@ import 'package:impresso_test/components/next_button.dart';
 import 'package:impresso_test/components/validate_icon_button.dart';
 import 'package:impresso_test/constants.dart';
 
-class JobScreen extends StatelessWidget {
-  static String id = 'job_screen';
+class SalaryScreen extends StatelessWidget {
+  static String id = 'salary_screen';
 
   @override
   Widget build(BuildContext context) {
@@ -18,11 +18,11 @@ class JobScreen extends StatelessWidget {
             children: [
               Expanded(
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Job',
+                      'Salary',
                       style: TextStyle(
-                        height: 2,
                         fontSize: 20,
                       ),
                     ),
@@ -35,11 +35,8 @@ class JobScreen extends StatelessWidget {
               ),
               Expanded(
                 flex: 3,
-                child: GridView.count(
-                  padding: EdgeInsets.symmetric(horizontal: 30),
-                  crossAxisCount: 2,
-                  crossAxisSpacing: 30,
-                  mainAxisSpacing: 30,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     ValidationIconButton(
                       icon: Image.asset('assets/badge_icon.png'),
@@ -51,9 +48,6 @@ class JobScreen extends StatelessWidget {
                     ValidationIconButton(
                         icon: Image.asset('assets/letter_icon.png'),
                         label: 'References'),
-                    ValidationIconButton(
-                        icon: Image.asset('assets/registration_icon.png'),
-                        label: 'Salary'),
                   ],
                 ),
               ),
