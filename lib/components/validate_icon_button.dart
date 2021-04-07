@@ -22,6 +22,7 @@ class ValidationIconButton extends StatelessWidget {
           ),
           Text(
             label,
+            textAlign: TextAlign.center,
             style: TextStyle(fontSize: 12, color: kMutedTextColor),
           ),
         ],

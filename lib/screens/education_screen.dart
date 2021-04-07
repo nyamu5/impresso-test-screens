@@ -44,17 +44,17 @@ class EducationScreen extends StatelessWidget {
                   children: [
                     ValidationIconButton(
                       icon: Image.asset('assets/badge_icon.png'),
-                      label: 'Job',
+                      label: 'Certificate',
                     ),
                     ValidationIconButton(
                         icon: Image.asset('assets/contract_icon.png'),
-                        label: 'Official ID'),
+                        label: 'Degree'),
                     ValidationIconButton(
                         icon: Image.asset('assets/letter_icon.png'),
-                        label: 'References'),
+                        label: 'Masters'),
                     ValidationIconButton(
                         icon: Image.asset('assets/registration_icon.png'),
-                        label: 'Salary'),
+                        label: 'PhD'),
                   ],
                 ),
               ),

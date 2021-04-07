@@ -40,14 +40,14 @@ class SalaryScreen extends StatelessWidget {
                   children: [
                     ValidationIconButton(
                       icon: Image.asset('assets/badge_icon.png'),
-                      label: 'Job',
+                      label: 'Latest Monthly \nSalary Slip',
                     ),
                     ValidationIconButton(
                         icon: Image.asset('assets/contract_icon.png'),
-                        label: 'Official ID'),
+                        label: 'Annual Income \nTax Slip'),
                     ValidationIconButton(
                         icon: Image.asset('assets/letter_icon.png'),
-                        label: 'References'),
+                        label: 'Others'),
                   ],
                 ),
               ),
@@ -66,7 +66,7 @@ class SalaryScreen extends StatelessWidget {
                     ),
                     Flexible(
                       child: Text(
-                        'Only Company Badge dated within the last 6 months will be accepted.',
+                        'Other type of documents that can prove your salary income.',
                         style: TextStyle(
                           fontSize: 10,
                           color: kMutedTextColor,

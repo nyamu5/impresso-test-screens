@@ -41,14 +41,14 @@ class TestimonialScreen extends StatelessWidget {
                   children: [
                     ValidationIconButton(
                       icon: Image.asset('assets/badge_icon.png'),
-                      label: 'Job',
+                      label: 'Company / Educational \nTestimonial',
                     ),
                     ValidationIconButton(
                         icon: Image.asset('assets/contract_icon.png'),
-                        label: 'Official ID'),
+                        label: 'CV / Resume \nReferences'),
                     ValidationIconButton(
                         icon: Image.asset('assets/letter_icon.png'),
-                        label: 'References'),
+                        label: 'Recommendations'),
                   ],
                 ),
               ),
