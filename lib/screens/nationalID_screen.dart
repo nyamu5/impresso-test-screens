@@ -82,7 +82,9 @@ class NationalIdScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              NextBtn(),
+              NextBtn(
+                label: 'UPLOAD',
+              ),
               BackBtn(
                 onTap: () {
                   Navigator.pop(context);

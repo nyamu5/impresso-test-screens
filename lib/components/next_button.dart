@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class NextBtn extends StatelessWidget {
-  NextBtn({this.onTap});
+  NextBtn({this.onTap, this.label = 'NEXT'});
+
+  final String label;
 
   final Function onTap;
 
@@ -12,7 +14,7 @@ class NextBtn extends StatelessWidget {
       child: OutlinedButton(
         onPressed: onTap,
         child: Text(
-          'NEXT',
+          label,
           style: TextStyle(color: Colors.white),
         ),
         style: ButtonStyle(
