@@ -39,14 +39,14 @@ class SalaryScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     ValidationIconButton(
-                      icon: Image.asset('assets/badge_icon.png'),
+                      icon: Image.asset('assets/month_icon.png'),
                       label: 'Latest Monthly \nSalary Slip',
                     ),
                     ValidationIconButton(
-                        icon: Image.asset('assets/contract_icon.png'),
+                        icon: Image.asset('assets/annual_icon.png'),
                         label: 'Annual Income \nTax Slip'),
                     ValidationIconButton(
-                        icon: Image.asset('assets/letter_icon.png'),
+                        icon: Image.asset('assets/others_icon.png'),
                         label: 'Others'),
                   ],
                 ),

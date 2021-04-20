@@ -34,12 +34,12 @@ class JobScreen extends StatelessWidget {
                 ),
               ),
               Expanded(
-                flex: 3,
+                flex: 2,
                 child: GridView.count(
-                  padding: EdgeInsets.symmetric(horizontal: 30),
+                  padding: EdgeInsets.symmetric(horizontal: 50),
                   crossAxisCount: 2,
-                  crossAxisSpacing: 30,
-                  mainAxisSpacing: 30,
+                  crossAxisSpacing: 5,
+                  mainAxisSpacing: 5,
                   children: [
                     ValidationIconButton(
                       icon: Image.asset('assets/badge_icon.png'),
